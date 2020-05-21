@@ -2,7 +2,7 @@
 
 @section('content')
     @if (Auth::check())
-        {{ Auth::user()->name }}
+        <h1>{{ Auth::user()->name }}のタスク一覧</h1>
     @else
         <div class="center jumbotron">
             <div class="text-center">
